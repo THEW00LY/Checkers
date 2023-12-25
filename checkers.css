@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(229, 223, 255);
+}
+
+.chess-board td {
+    position: relative;
+}
+
+.checker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 80%;
+    height: 80%;
+}
+
+.red-checker {
+    background-color: red;
+}
+
+.green-checker {
+    background-color: blue;
+}

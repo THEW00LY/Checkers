@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkers LYTA</title>
+        <link rel = "stylesheet" href = "checkers.css">
+    </head>
+    <style>
+    .chess-board { margin: auto; }
+            .chess-board th { padding: .5em; }
+            .chess-board td { border: 1px solid; width: 100px; height: 100px; }
+            .chess-board .light { background: #eee; }
+            .chess-board .dark { background: #000; }
+    </style>
+    <body>
+        <script src = "checkers.js"></script>
+        <div id = "gamepage">
+            <h2 id = "bougé"></h2>
+        </div>
+        <table id="ch", class="chess-board">
+            <tbody>
+                <tr>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_1"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_2"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_3"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_4"></div></td>
+                </tr>
+                <tr>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_5"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_6"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_7"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_8"></div></td>
+                    <td class="light"></td>
+                </tr>
+                <tr>
+                    <td class="light"></td>
+                    <td id="1", class="dark"><div class="checker red-checker", id="checkers_black_9", onclick="move()"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_10"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_11"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker red-checker", id="checkers_black_12"></div></td>
+                </tr>
+                <tr>                    
+                    <td id="2", class="dark"><div onclick="", id = "test"></div></td>
+                    <td class="light"></td>
+                    <td id="3", class="dark"><div onclick="", id = "test1"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                </tr>
+                <tr>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                </tr>
+                <tr>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                </tr>
+                <tr>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                    <td class="dark"><div class="checker green-checker"></div></td>
+                    <td class="light"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
